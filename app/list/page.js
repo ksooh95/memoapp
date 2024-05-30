@@ -18,7 +18,7 @@ export default async function List() {
                     <img src="/img/psa.png" alt="" />
                     <div className="info_r">
                         <h3>수환의 Note</h3>
-                        <p>내 정보 보기</p>
+                        <p>내 정보보기</p>
                     </div>
                 </div>
                 <div className="menu">
