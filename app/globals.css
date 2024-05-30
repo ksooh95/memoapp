@@ -1,0 +1,342 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    background-image: ('/img/bg.jpeg');
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: fixed;
+    margin: 0 auto;
+    /* background: #333; */
+}
+
+.bg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.bg img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.container {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: normal;
+    justify-content: normal;
+    border-radius: 15px;
+    overflow: hidden;
+    resize: unset;
+    height: 80%;
+}
+
+.container .left {
+    width: 30%;
+    padding: 20px;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.95);
+}
+.container .left .control_btn {
+    display: flex;
+    align-items: center;
+    justify-content: normal;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+.container .left .control_btn button {
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    box-shadow: none;
+    border: none;
+    cursor: pointer;
+}
+.container .left .control_btn button.cb1 {
+    background: #ff5f57;
+}
+.container .left .control_btn button.cb2 {
+    background: #febc2e;
+}
+.container .left .control_btn button.cb3 {
+    background: #29c740;
+}
+.container .left .info {
+    display: flex;
+    align-items: center;
+    justify-content: normal;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+.container .left .info img {
+    width: 15%;
+    display: block;
+}
+.container .left .info .info_r {
+}
+.container .left .info .info_r h3 {
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.container .left .info .info_r p {
+    font-size: 14px;
+    color: #999;
+}
+.container .left .menu {
+    display: block;
+}
+.container .left .menu h5 {
+    display: block;
+    margin-bottom: 10px;
+    color: #999;
+}
+.container .left .menu ul {
+    display: block;
+}
+.container .left .menu ul li {
+    display: block;
+    padding: 5px 0 5px 5px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: inherit;
+}
+.container .left .menu ul li a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 18px;
+    font-weight: 500;
+}
+.container .right {
+    width: 70%;
+    background: #fff;
+    /* padding: 20px; */
+    box-sizing: border-box;
+}
+
+.container .right {
+}
+.container .right .memo_body_title {
+    font-size: 16px;
+    font-weight: 500;
+    color: #555;
+}
+.container .right .r_head {
+    padding: 30px;
+    box-sizing: border-box;
+    background: #ddd;
+}
+.container .right .r_head .r_head_menu {
+    display: flex;
+    align-items: center;
+    justify-content: normal;
+    gap: 10px;
+}
+.container .right .r_head .r_head_menu a {
+    text-decoration: none;
+    color: inherit;
+}
+.container .right .r_head .r_head_search {
+}
+.container .right .memo_body {
+    padding: 30px 15px;
+    box-sizing: border-box;
+}
+
+.container .right .memo_body .memo_list {
+    display: block;
+    overflow: scroll;
+    height: 550px;
+}
+.container .right .memo_body .memo_list li {
+    padding: 15px;
+    box-sizing: border-box;
+    display: block;
+    border-bottom: 1px solid #ddd;
+}
+.container .right .memo_body .memo_list li .memo_title {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.container .right .memo_body .memo_list li .memo_content {
+    display: flex;
+    align-items: center;
+    justify-content: normal;
+    font-size: 15px;
+}
+.container .right .memo_body .memo_list li .memo_content .memo_date {
+    margin-right: 10px;
+    color: #555;
+}
+.container .right .memo_body .memo_list li .memo_content .memo_text {
+    color: #888;
+}
+
+.container .right .memo_body .memo_write {
+}
+.container .right .memo_body .memo_write input {
+    display: block;
+    border: 1px solid #ddd;
+}
+.container .right .memo_body .memo_write textarea {
+    display: block;
+}
+
+.memo_detail {
+}
+.memo_detail .memo_time {
+    display: block;
+    text-align: center;
+    color: #999;
+    padding: 10px 0;
+}
+.memo_detail .memo_title {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+.memo_detail .memo_text {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 20px 0;
+}
